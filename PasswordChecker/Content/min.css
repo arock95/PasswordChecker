@@ -1,0 +1,6 @@
+﻿.border {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: thin;
+    padding: 10px;
+}

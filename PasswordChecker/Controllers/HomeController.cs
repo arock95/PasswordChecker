@@ -34,7 +34,7 @@ namespace PasswordChecker.Controllers
             var client = new RestClient("https://api.pwnedpasswords.com");
             var request = new RestRequest("range/{id}", Method.GET);
             request.AddUrlSegment("id", sb.Substring(0,5));
-            request.AddHeader("User-Agent", "Company-Internal-Password-Tester");
+            request.AddHeader("User-Agent", "Anthonys-Azure-Password-Tester");
             IRestResponse response = client.Execute(request);
 
             if (response.IsSuccessful)
